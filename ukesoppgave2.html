@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Button</title>
+    </head>
+    <body>
+
+
+        <br />
+
+        <input type="button" value="Knapp 1" onclick="changeText('Du trykket på 1!');"/>
+        <input type="button" value="Knapp 2" onclick="changeText('Du trykket på 2...');"/>
+        <input type="button" value="Knapp 3" onclick="changeText('Nå trykket du visst på 3.');"/>
+        <input type="button" value="Knapp 4" onclick="changeText('Tror du trykket på 4?');"/>
+        <input type="button" value="Knapp 5" onclick="changeText('Du klarte å trykke på 5!');"/>
+
+        <br />
+        <br />
+
+
+        <div id="pText"></div>
+
+        <style>
+
+            .first-style {
+
+                color: rgb(219, 33, 219); font-weight: bolder;
+
+
+            }
+            </style>
+
+        <script>
+
+
+            function changeText(test) {
+                document.getElementById('pText').innerHTML=test;
+                onclick = document.getElementById('pText').classList.toggle('first-style');
+
+
+            }
+
+        </script>
+ 
+
+    </body>
+</html>
